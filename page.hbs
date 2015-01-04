@@ -1,0 +1,26 @@
+{{!< default}}
+
+{{> header_page}}
+
+{{! The main content area on the page }}
+<main id="content_willsong" role="main">
+
+    <div id="content_column_willsong" class="boxed-cargo">
+
+        {{#post}}
+
+        <article class="{{post_class}} col-off2lg8-off2md8-off1sm10">
+
+            <header class="reading_post_header">
+                <h2 class="post_title">{{{title}}}</h2>
+            </header>
+
+            {{content }}
+
+        </article>
+
+        {{/post}}
+
+    </div>
+
+</main>

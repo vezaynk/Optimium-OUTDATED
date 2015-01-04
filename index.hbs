@@ -1,0 +1,33 @@
+{{!< default}}
+
+{{> header}}
+
+{{! The main content area on the homepage }}
+<main id="content_willsong" role="main">
+
+    <div id="content_column_willsong" class="boxed-cargo">
+
+        {{#foreach posts}}
+
+        <article class="index_post {{post_class}}">
+            <div class="left_side_article col-lg3-md3-sm3">
+                <span class="fa fa-clock-o"></span> <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> <br>
+                <span>{{tags prefix=""}}</span>
+            </div>
+            <div class="right_side_article col-off1lg8-off1md8-off1sm8">
+                <header class="post_header">
+                    <h2 class="post_title"><a href="{{url}}">{{{title}}}</a></h2>
+                </header>
+                {{content words="0"}}
+                <p class="post_excerpt">{{excerpt words="50"}}&hellip;</p>
+                <a href="{{url}}" class="read_more_btn">Read More</a>
+            </div>
+        </article>
+
+        {{/foreach}}
+
+        {{pagination}}
+
+    </div>
+
+</main>

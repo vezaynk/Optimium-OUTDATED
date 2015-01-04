@@ -1,0 +1,19 @@
+{{! Willsong - BLOG HEADER PARTIAL }}
+
+<header id="head_willsong">
+
+    <div id="head_content_willsong" class="boxed-cargo">
+
+        {{#if @blog.logo}}
+        <a href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}} Logo" /></a>
+		{{else}}
+        <h1 id="blog_title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
+		{{/if}}
+
+        {{> menu}}
+
+        <p id="blog_description">{{@blog.description}}</p>
+
+    </div>
+
+</header>
