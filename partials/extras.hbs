@@ -19,8 +19,9 @@
 <link href=//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css rel=stylesheet>
 <script>
 $("a[href^='http://'], a[href^='https://']").click(function(){
-
-$(this).attr("target","_blank")
-
+$(this).attr("target","_blank");
+});
+$("a[href^='{{@blog.url}}']").click(function(){
+$(this).attr("target","_self");
 });
 </script>
