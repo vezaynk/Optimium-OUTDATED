@@ -10,6 +10,7 @@ The optium theme for ghost is based on the willsong theme and modified for both 
  - Responsive
  - Optimized
  - Frequent updates on GitHub
+ - Optimized for Social Media
  - etc...
 
 
