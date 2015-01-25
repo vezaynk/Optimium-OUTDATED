@@ -8,6 +8,7 @@
     <div id="content_column_Optimium" class="boxed-cargo">
 
         {{#foreach posts}}
+                    
 
         <article class="index_post {{post_class}}">
             <div class="left_side_article col-lg3-md3-sm3">
@@ -16,7 +17,9 @@
             </div>
             <div class="right_side_article col-off1lg8-off1md8-off1sm8">
                 <header class="post_header">
-                    <h2 class="post_title"><a href="{{url}}">{{{title}}}</a></h2>
+                    <h2 class="post_title"><a href="{{url}}">{{{title}}}</a></h2>{{#author}}
+                    <h5 style="margin-top: 10px;">By <a href="{{url}}">{{name}}</a></h5>
+                    {{/author}}
                 </header>
                 {{content words="0"}}
                 <p class="post_excerpt">{{excerpt words="50"}}&hellip;</p>
