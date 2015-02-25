@@ -14,9 +14,8 @@ The optium theme for ghost is based on the willsong theme and modified for both 
  - etc...
 
  ##Important!
- It is important to note that the theme is updated very often so make sure that you have the latest version from time to time.
+ ~~It is important to note that the theme is updated very often so make sure that you have the latest version from time to time.~~
 
- ##To do list:
-
-  - Redesign Author page
-  - Optimize!
+ #Developement Ceased
+Developement has been ceased until futher notice (probably forever) because it is finished and I am not entirely
+satisfied with the final product. With that in mind, I will continue making ghost themes.
